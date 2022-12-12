@@ -1,11 +1,11 @@
 import { GlobalContext } from "../App";
+import { useContext } from "react";
 
 export const Bio = () => {
+  const name = useContext(GlobalContext);
   return (
     <div>
-      <GlobalContext.Consumer>
-        {(value) => <p>My Name is {value}</p>}
-      </GlobalContext.Consumer>
+      <p>My Name is {name}</p>
     </div>
   );
 };

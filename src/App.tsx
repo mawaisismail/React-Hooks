@@ -9,7 +9,7 @@ export const GlobalContext = createContext("");
 function App() {
   return (
     <div className="App">
-      <GlobalContext.Provider value={"Awais"}>
+      <GlobalContext.Provider value="Zaman">
         <Header />
         <About />
         <Footer />
